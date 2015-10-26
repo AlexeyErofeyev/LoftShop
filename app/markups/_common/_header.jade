@@ -1,0 +1,30 @@
+include _mixin-nav
+header.header
+	.contacts
+		.wrapper.clearfix
+			ul.socials__list
+				li.social_item
+					a(href="#" class="social_link_fb") facebook
+				li.social_item
+					a(href="#" class="social_link_vk") vkontakte
+				li.social_item
+					a(href="#" class="social_link_tw") twitter
+			adress.adress
+				.map ул. Маяковская 6, офис 17
+				.phone +7 (921) 123-12-13	
+								
+	.search
+		.wrapper.clearfix
+			a(href="#" class="logo")
+				img(src="img/logo.png" class="logo_img")
+			form.search-form
+				input(type="text" class="search_input" placeholder="Что будем искать")
+				input(type="submit" class="search_button" value="Найти")
+			ul.client-info
+				li.client-info_item
+					a.client-info_link_road-map Карта проезда
+				li.client-info_item
+					a.client-info_link_history История заказов
+				li.client-info_item
+					a.client-info_link_cart Корзина
+	+nav('nav',['Планшеты','Мобильные','Мр3 плееры','Персональные компьютеры','Ноутбуки','Аксессуары','Бытовая техника'],1)

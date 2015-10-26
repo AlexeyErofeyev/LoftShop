@@ -1,0 +1,206 @@
+.section{
+	float:right;
+	width: 743px;
+}
+
+.sort{
+	font-family: "OpenSansRegular";
+	background-color: #e4ebee;
+	border-bottom: 1px solid $borderColor;
+	border-radius: 5px;
+    padding-left: 21px;
+    padding-bottom: 13px;
+    padding-top: 14px;
+    margin-bottom: 20px;
+}
+.option{
+	float:left;
+}
+.option_head{
+	margin:0px;
+	padding: 0px;
+	float: left;
+	font-size: 14px;
+    margin-right: 7px;
+}
+
+.option_item{
+	width: 141px;
+	border-radius: 3px;
+	padding-left: 7px;
+	padding-bottom: 3px;
+	font-family: "OpenSansLight";
+	font-size: 14px;
+}
+
+.grid{
+	float: right;
+}
+.gridView{
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	font-size: 14px;
+}
+.gridView-list{
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+}
+.gridView_item{
+	display: inline-block;
+}
+.phone-content{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+.phone-item{
+	background-color: #fbfbfb;
+	width: 234px;
+	padding-top: 19px;
+	border: 1px solid $borderColor;
+	border-radius: 5px;
+	padding-bottom: 22px;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 13px;
+	margin-bottom: 21px;
+	&:nth-child(3n+1){
+		margin-right: 0px;
+	} 
+	&:hover{
+		-webkit-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.6);
+		-moz-box-shadow:    0px 0px 6px 0px rgba(50, 50, 50, 0.6);
+		box-shadow:         0px 0px 6px 0px rgba(50, 50, 50, 0.6);
+	}
+}
+.phone_img-holder{
+	width: 135px;
+	height: 125px;
+	overflow: hidden;
+	margin: 0 auto;
+	text-align: center;
+	background-color: white;
+	border: 1px solid $borderColor;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin-bottom:20px;
+}
+
+.phone_ico-holder{
+	width: 135px;
+	margin: 0 auto;
+	margin-bottom: 12px;
+}
+.ico_list{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+.ico_item{
+	display: inline-block;
+	margin:0px;
+	margin-right: 29px;
+	&:last-child{
+		    margin-right: 0px;
+	}
+}
+
+.phone_name{
+	height: 40px;
+	margin: 0 auto;
+	margin-bottom: 2px;
+	text-align: center;
+	h2{
+		font-family: "OpenSansSemiBold";
+		font-size: 14px;
+		padding:0 10px;
+	}
+}
+
+.kit{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	font-family: "OpenSansRegular";
+	font-size: 14px;
+	margin-bottom: 9px;
+	li{
+		padding-bottom: 1px;
+	}
+	li:nth-child(odd){
+		background-color: #e6e6e6;
+	}
+}
+.left-col{
+	float: left;
+	padding-left: 11px;
+}
+.right-col{
+	float: right;
+	padding-right: 12px
+}
+
+.stars{
+	width: 135px;
+	margin: 0 auto;
+	padding: 0px;
+	list-style: none;
+	margin-bottom: 2px;
+	li:last-child{
+		background-color: #e6e6e6;
+		padding:2px 12px;
+		border-radius: 10px;
+		font-family: "OpenSansSemiBold";
+		font-size: 11.5px;
+		color: white;
+	}
+}
+.star{
+	display: inline-block;
+}
+.price{
+	text-align: center;
+	font-family: "OpenSansSemiBold";
+	font-size: 20px;
+	margin: 0 auto;
+	padding: 0px;
+	margin-bottom: 2px;
+}
+.availability{
+	font-family: "OpenSansSemiBold";
+	font-size: 12px;
+	list-style: none;
+	color: green;
+	margin: 0 auto;
+	padding: 0px;
+	float: left;
+	margin-top: 8px;
+}
+.availability_indicator{
+	display: inline-block;
+}
+.availability_indicator-color{
+	width: 7px;
+	height: 7px;
+	background-color: green;
+	border-radius: 50%;
+	margin-left: 20px;
+}
+.availability_status{
+	color: #7f7f7f;
+	margin-left: 4px;
+	display: inline-block;
+}
+.phone_bay{
+	float: right;
+	display: block;
+	text-decoration: none;
+	font-family: "OpenSansSemiBold";
+	color: white;
+	background-color:$orange;
+	border-radius: 5px;
+	padding: 4px 10px;
+	margin-right: 14px;
+}

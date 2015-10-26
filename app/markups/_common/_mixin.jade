@@ -1,0 +1,70 @@
+- var Samsung = {"img":"img/phone-1.png","name":"Samsung GT-I9301I  GALAXY S 3","typeSIM":"Micro-SIM","countSIM":1,"color":"Белый","OS":"Android","threeG":"Есть","fourG":"Нет","GPS":"Есть","price":"11 290"}
+- var Lumia640 = {"img":"img/phone-2.png","name":"Microsoft Lumia 640 RM-1077","typeSIM":"Micro-SIM","countSIM":2,"color":"Белый","OS":"Windows Phone","threeG":"Есть","fourG":"Нет","GPS":"A-GPS","price":"10 990"}
+- var Archos = {"img":"img/phone-3.png","name":"Archos 50 Oxygen Plus","typeSIM":"Micro-SIM","countSIM":2,"color":"Серый","OS":"Android","threeG":"Есть","fourG":"Нет","GPS":"Есть","price":"9 900"}
+- var Philips = {"img":"img/phone-4.png","name":"Philips S398 Black","typeSIM":"Micro-SIM","countSIM":2,"color":"Серый","OS":"Android","threeG":"Есть","fourG":"Нет","GPS":"Нет","price":"8 900"}
+- var Lumia430 = {"img":"img/phone-5.png","name":"Microsoft Lumia 430RM-10","typeSIM":"Micro-SIM","countSIM":2,"color":"Черный","OS":"Windows Phone","threeG":"Есть","fourG":"Нет","GPS":"A-GPS","price":"5 390"}
+- var Senseit = {"img":"img/phone-6.png","name":" Senseit L301 Black","typeSIM":"Micro-SIM","countSIM":2,"color":"Черный","OS":"Android","threeG":"Есть","fourG":"Нет","GPS":"Есть","price":"4 990"}
+- var HIGHSCREEN = {"img":"img/phone-7.png","name":"HIGHSCREEN WinWin Black","typeSIM":"Micro-SIM","countSIM":2,"color":"Черный","OS":"Windows Phone","threeG":"Есть","fourG":"Нет","GPS":"Есть","price":"3 990"}
+- var Alcatel = {"img":"img/phone-8.png","name":"Alcatel OT4013D PIXI 3 (2 SIM)","typeSIM":"Micro-SIM","countSIM":2,"color":"Белый","OS":"Android","threeG":"Есть","fourG":"Нет","GPS":"A-GPS","price":"3 290"}
+- var Fly = {"img":"img/phone-9.png","name":"Fly IQ434 Era Nano 5","typeSIM":"Micro-SIM","countSIM":2,"color":"Черный","OS":"Android","threeG":"Есть","fourG":"Нет","GPS":"Нет","price":"1 790"}
+- var items = [Samsung,Lumia640,Archos,Philips,Lumia430,Senseit,HIGHSCREEN,Alcatel,Fly]
+mixin phone()
+	each item in items
+		li.phone-item.clearfix
+				.phone_img-holder
+					img(src = item.img class="phone-img")
+				.phone_ico-holder
+					ul.ico_list
+						li.ico_item
+							a.ico_link
+								img(class="ico_img" src="img/phone-1ico.png")
+						li.ico_item
+							a.ico_link
+								img(class="ico_img" src="img/phone-1ico.png")
+						li.ico_item
+							a.ico_link
+								img(class="ico_img" src="img/phone-1ico.png")
+				.phone_name				
+					h2 #{item.name}
+				ul.kit
+					li.clearfix 
+						span.left-col Тип SIM-карты
+						span.right-col #{item.typeSIM}
+					li.clearfix 
+						span.left-col Количество SIM-карт
+						span.right-col #{item.countSIM}
+					li.clearfix 
+						span.left-col Цвет
+						span.right-col #{item.color}
+					li.clearfix 
+						span.left-col ОС
+						span.right-col #{item.OS}
+					li.clearfix 
+						span.left-col Связь 3G
+						span.right-col #{item.threeG}
+					li.clearfix 
+						span.left-col 4G(LTE)
+						span.right-col #{item.fourG}
+					li.clearfix 
+						span.left-col GPS-модуль
+						span.right-col #{item.GPS}
+				ul.stars
+					li.star
+						img(src="img/redStar.png")
+					li.star
+						img(src="img/redStar.png")
+					li.star
+						img(src="img/redStar.png")
+					li.star
+						img(src="img/redStar.png")
+					li.star
+						img(src="img/flatStar.png")
+					li.star 4
+				h4.price #{item.price}
+					span P
+				
+				ul.availability
+					li.availability_indicator
+						.availability_indicator-color
+					li.availability_status В наличии
+				a(class="phone_bay" href="#") В корзину

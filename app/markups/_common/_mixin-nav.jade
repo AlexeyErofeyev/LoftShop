@@ -1,0 +1,7 @@
+mixin nav(className, items,activIndex)
+	nav(class= className)
+		.wrapper.clearfix
+			ul(class= className+'_list')
+				each item, index in items
+					li(class=className+'_item')
+						a(href="#" class=className+"_link" + ((activIndex == index) ? ' active' : ''))= item

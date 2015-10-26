@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "OpenSansRegular";
+    src: url("OpenSans/OpenSansRegular/OpenSansRegular.eot");
+    src: url("OpenSans/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+    url("OpenSans/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+    url("OpenSans/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "OpenSansSemiBold";
+    src: url("OpenSans/OpenSansSemiBold/OpenSansSemiBold.eot");
+    src: url("OpenSans/OpenSansSemiBold/OpenSansSemiBold.eot?#iefix")format("embedded-opentype"),
+    url("OpenSans/OpenSansSemiBold/OpenSansSemiBold.woff") format("woff"),
+    url("OpenSans/OpenSansSemiBold/OpenSansSemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "OpenSansLight";
+    src: url("OpenSans/OpenSansLight/OpenSansLight.eot");
+    src: url("OpenSans/OpenSansLight/OpenSansLight.eot?#iefix")format("embedded-opentype"),
+    url("OpenSans/OpenSansLight/OpenSansLight.woff") format("woff"),
+    url("OpenSans/OpenSansLight/OpenSansLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+  font-family: 'PTRoubleDecorative';
+  src: url('PTRoubleDecorative/PTRoubleDecorative.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,50 @@
+$borderColor: #ebedef;
+$orange: #ff6e34;
+@mixin filter{
+	list-style: none;
+	border: 1px solid $borderColor;
+	background-color: #fbfbfb;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+}
+
+@mixin filterItem{
+	display: block;
+	font-size: 14px;
+    padding-top: 12px;
+    padding-bottom: 14px;
+    padding-left: 27px;
+    border-bottom: 1px solid $borderColor;
+    &:hover{
+    	background-color: #d9e5ea;
+    	cursor: pointer;
+    }
+}
+.aside{
+	float:left;
+	width: 333px;
+}
+
+.status-phone{
+	@include filter;
+	margin-bottom: 38px;
+}
+.status-phone_list{
+	margin: 0px;
+	&:last-child a{
+    	border-bottom: none;
+    }
+}
+.status-phone_link{
+	@include filterItem;
+	font-family: "OpenSansRegular";
+}
+.filter{
+	@include filter;
+	font-family: 'OpenSansSemiBold';
+}
+.filter_item{
+	@include filterItem;
+}
