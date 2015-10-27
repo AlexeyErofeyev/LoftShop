@@ -1,0 +1,14 @@
+include _mixin-nav
+.wrapper.clearfix
+	a(href="#" class="footer-logo").clearfix
+		img(src="img/footer-logo.png" class="footer-logo_img")
+	.footer-social.clearfix		
+		ul.footer-socials__list
+			li.footer-social_item
+				a(href="#" class="social_link_fb") facebook
+			li.footer-social_item
+				a(href="#" class="social_link_vk") vkontakte
+			li.footer-social_item
+				a(href="#" class="social_link_tw") twitter
+		+nav('nav_footer',['Планшеты','Мобильные телефоны','Мр3 плееры','Персональные компьютеры','Ноутбуки','Аксессуары','Бытовая техника'])
+p.copyright All rights reserved. 2015. no copy alowed

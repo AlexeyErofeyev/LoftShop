@@ -1,6 +1,12 @@
 body {
   color: #333333;
   background-color: #f4f4f4;
+  height: 100%;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
 }
 
 .wrapper {
@@ -33,6 +39,12 @@ body {
 
 .social_item {
   display: inline-block;
+}
+
+.social_link {
+  display: block;
+  width: 26px;
+  height: 26px;
 }
 
 .adress {

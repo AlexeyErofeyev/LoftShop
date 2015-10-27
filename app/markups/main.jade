@@ -10,11 +10,25 @@ html(lang="en")
 			block title
 	body
 		include _common/_header					
-		.wrapper
+		.wrapper.clearfix
 			.bread-crumbs Главная > Каталог
 			h1.page-name Мобильные телефоны
 			include _common/_aside	
 			include _common/_section
-
+		.wrapper.clearfix
+			ul.pages
+				li.pages_item 
+					a.pages_link 1
+				li.pages_item 
+					a.pages_link 2
+				li.pages_item 
+					a.pages_link 3
+				li.pages_item 
+					a.pages_link 4
+				li.pages_item 
+					a.pages_link 5
+		.wrapper
+			.info
+				include _common/info
 		footer.footer
-				
+			include _common/footer				

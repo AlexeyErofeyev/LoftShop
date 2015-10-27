@@ -1,76 +1,265 @@
-/*
-Error: Undefined variable: "$borderColor".
-        on line 9 of C:/Users/Alex/Desktop/loftShop/app/styles/sections/section.scss
+.section {
+  float: right;
+  width: 744px;
+}
 
-4: }
-5: 
-6: .sort{
-7: 	font-family: "OpenSansRegular";
-8: 	background-color: #e4ebee;
-9: 	border-bottom: 1px solid $borderColor;
-10: 	border-radius: 5px;
-11:     padding-left: 21px;
-12:     padding-bottom: 13px;
-13:     padding-top: 14px;
-14:     margin-bottom: 20px;
+.sort {
+  font-family: "OpenSansRegular";
+  background-color: #e4ebee;
+  border-bottom: 1px solid #ebedef;
+  border-radius: 5px;
+  padding-left: 21px;
+  padding-bottom: 13px;
+  padding-top: 14px;
+  margin-bottom: 20px;
+}
 
-Backtrace:
-C:/Users/Alex/Desktop/loftShop/app/styles/sections/section.scss:9
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/script/tree/list_literal.rb:63:in `block in _perform'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/script/tree/list_literal.rb:63:in `map'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/script/tree/list_literal.rb:63:in `_perform'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:395:in `visit_prop'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:431:in `block (2 levels) in visit_rule'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:431:in `map'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:431:in `block in visit_rule'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:429:in `visit_rule'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/engine.rb:278:in `render'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-1.0.3/lib/compass/sass_compiler.rb:40:in `compile!'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-1.0.3/lib/compass/commands/update_project.rb:49:in `perform'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-1.0.3/bin/compass:44:in `call'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
-C:/Ruby22-x64/bin/compass:23:in `load'
-C:/Ruby22-x64/bin/compass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$borderColor\".\A         on line 9 of C:/Users/Alex/Desktop/loftShop/app/styles/sections/section.scss\A \A 4: }\A 5: \A 6: .sort{\A 7: 	font-family: \"OpenSansRegular\";\A 8: 	background-color: #e4ebee;\A 9: 	border-bottom: 1px solid $borderColor;\A 10: 	border-radius: 5px;\A 11:     padding-left: 21px;\A 12:     padding-bottom: 13px;\A 13:     padding-top: 14px;\A 14:     margin-bottom: 20px;"; }
+.option {
+  float: left;
+}
+
+.option_head {
+  margin: 0px;
+  padding: 0px;
+  float: left;
+  font-size: 14px;
+  margin-right: 7px;
+}
+
+.option_item {
+  width: 141px;
+  border-radius: 3px;
+  padding-left: 7px;
+  padding-bottom: 3px;
+  font-family: "OpenSansLight";
+  font-size: 14px;
+}
+
+.grid {
+  float: right;
+}
+
+.gridView {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+}
+
+.gridView-list {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+}
+
+.gridView_item {
+  display: inline-block;
+}
+
+.phone-content {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.phone-item {
+  background-color: #fbfbfb;
+  width: 234px;
+  padding-top: 19px;
+  border: 1px solid #ebedef;
+  border-radius: 5px;
+  padding-bottom: 22px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 13px;
+  margin-bottom: 21px;
+}
+.phone-item:nth-child(3n+3) {
+  margin-right: 0px;
+}
+.phone-item:hover {
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.6);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.6);
+  box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.6);
+}
+
+.phone_img-holder {
+  width: 135px;
+  height: 125px;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+  background-color: white;
+  border: 1px solid #ebedef;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 20px;
+}
+
+.phone_ico-holder {
+  width: 135px;
+  margin: 0 auto;
+  margin-bottom: 12px;
+}
+
+.ico_list {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.ico_item {
+  display: inline-block;
+  margin: 0px;
+  margin-right: 29px;
+}
+.ico_item:last-child {
+  margin-right: 0px;
+}
+
+.phone_name {
+  height: 40px;
+  margin: 0 auto;
+  margin-bottom: 2px;
+  text-align: center;
+}
+.phone_name h2 {
+  font-family: "OpenSansSemiBold";
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+.kit {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-family: "OpenSansRegular";
+  font-size: 14px;
+  margin-bottom: 9px;
+}
+.kit li {
+  padding-bottom: 1px;
+}
+.kit li:nth-child(odd) {
+  background-color: #e6e6e6;
+}
+
+.left-col {
+  float: left;
+  padding-left: 11px;
+}
+
+.right-col {
+  float: right;
+  padding-right: 12px;
+}
+
+.stars {
+  width: 135px;
+  margin: 0 auto;
+  padding: 0px;
+  list-style: none;
+  margin-bottom: 2px;
+}
+.stars li:last-child {
+  background-color: #e6e6e6;
+  padding: 2px 12px;
+  border-radius: 10px;
+  font-family: "OpenSansSemiBold";
+  font-size: 11.5px;
+  color: white;
+}
+
+.star {
+  display: inline-block;
+}
+
+.price {
+  text-align: center;
+  font-family: "OpenSansSemiBold";
+  font-size: 20px;
+  margin: 0 auto;
+  padding: 0px;
+  margin-bottom: 2px;
+}
+
+.availability {
+  font-family: "OpenSansSemiBold";
+  font-size: 12px;
+  list-style: none;
+  color: green;
+  margin: 0 auto;
+  padding: 0px;
+  float: left;
+  margin-top: 8px;
+}
+
+.availability_indicator {
+  display: inline-block;
+}
+
+.availability_indicator-color {
+  width: 7px;
+  height: 7px;
+  background-color: green;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.availability_status {
+  color: #7f7f7f;
+  margin-left: 4px;
+  display: inline-block;
+}
+
+.phone_bay {
+  float: right;
+  display: block;
+  text-decoration: none;
+  font-family: "OpenSansSemiBold";
+  color: white;
+  background-color: #ff6e34;
+  border-radius: 5px;
+  padding: 4px 10px;
+  margin-right: 14px;
+}
+
+.pages {
+  float: right;
+  margin: 0;
+  margin-top: 41px;
+  padding: 0px;
+  list-style: none;
+}
+
+.pages_item {
+  margin: -1px;
+  padding: 0px;
+  display: inline-block;
+}
+
+.pages_link {
+  display: block;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 9px;
+  padding-left: 9px;
+  background-color: #fbfbfb;
+  font-size: 12px;
+  font-family: "OpenSansSemiBold";
+  border: 1px solid #ebedef;
+  border-radius: 3px;
+}
+.pages_link:hover {
+  background-color: #e0e0e0;
+}
+
+.info h2 {
+  font-family: "OpenSansSemiBold";
+  font-size: 20px;
+  margin-top: 27px;
+}
+.info p {
+  font-family: "OpenSansRegular";
+  font-size: 14px;
+}
