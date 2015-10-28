@@ -3,12 +3,13 @@
 body {
   color: #333333;
   background-color: #f4f4f4;
-  height: 100%;
+  height: auto;
+  position: relative;
 }
 
 html {
+  height: 100%;
   position: relative;
-  min-height: 100%;
 }
 
 .wrapper {
@@ -527,13 +528,10 @@ html {
 
 .footer {
   background-image: url("../img/bg-footer.png");
-  padding-top: 47px;
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 174px;
   position: absolute;
-  bottom: -221px;
   width: 100%;
+  bottom: -210px;
+  left: 0;
 }
 
 .footer-logo {

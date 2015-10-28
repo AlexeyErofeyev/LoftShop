@@ -1,12 +1,13 @@
 body {
   color: #333333;
   background-color: #f4f4f4;
-  height: 100%;
+  height: auto;
+  position: relative;
 }
 
 html {
+  height: 100%;
   position: relative;
-  min-height: 100%;
 }
 
 .wrapper {
