@@ -50,14 +50,15 @@ html {
 	padding-top: 24px;
     padding-bottom: 29px;
 }
-.socials__list {
+.socials_list {
   margin: 0px;
+  margin-top: -13px;
   padding:0px;
   float: left;
 }
-
-.social_item {
+.socials_item {
   display: inline-block;
+  margin-right: 12px; 
 }
 .social_link{
 	display: block;
@@ -65,17 +66,18 @@ html {
 	height: 26px;
 }
 
-// @import "sprite/*.png";
-
-// .social_link_vk{
-// 	@include img(vk);
-// }
-// // $socials: fb,vk,tw;
-// // @each $social in $socials {
-// // 	.social_link_#{$social}{
-// // 		background-image: ;
-// // 	}
-// // }
+@import "sprite/*.png"; 
+$items : FB,VK,TW;
+@each $item in $items{
+.social_link_#{$item} {
+  @include 	sprite-sprite(#{$item});
+  display: block;
+  width: sprite-sprite-width(#{$item});
+  height: sprite-sprite-height(#{$item});
+  font-size: 0px;
+  vertical-align: top;
+}
+}
 
 .adress {
   float: right;

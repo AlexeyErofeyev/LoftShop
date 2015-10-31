@@ -1,0 +1,5 @@
+mixin social(icons,mod)
+	ul(class="clearfix socials_list" +mod )
+		each icon in icons
+			li(class="socials_item" +mod)
+				a(href="#" class="social_link_"+icon+mod)= icon

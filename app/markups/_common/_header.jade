@@ -1,14 +1,9 @@
 include _mixin-nav
+include _socials
 header.header
 	.contacts
 		.wrapper.clearfix
-			ul.socials__list
-				li.social_item
-					a(href="#" class="social_link_fb") facebook
-				li.social_item
-					a(href="#" class="social_link_vk") vkontakte
-				li.social_item
-					a(href="#" class="social_link_tw") twitter
+			+social(['FB','VK','TW'],'')
 			adress.adress
 				.map ул. Маяковская 6, офис 17
 				.phone +7 (921) 123-12-13	
@@ -28,5 +23,5 @@ header.header
 				li.client-info_item
 					a.client-info_link_cart Корзина
 	nav.nav
-		.wrapper.clearfix				
+		.wrapper.clearfix
 			+nav('nav',['Планшеты','Мобильные','Мр3 плееры','Персональные компьютеры','Ноутбуки','Аксессуары','Бытовая техника'],1)

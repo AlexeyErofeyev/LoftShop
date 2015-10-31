@@ -72,7 +72,7 @@ gulp.task('watch',function () {
 	gulp.watch(paths.scss.location, ['compass']);
 	gulp.watch([
 		'app/*.html',
-		'app/js/**/*.js',
+		'app/js/*.js',
 		'app/css/**/*.css'
 		]).on('change',browserSync.reload);
 });

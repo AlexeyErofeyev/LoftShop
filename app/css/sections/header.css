@@ -32,20 +32,63 @@ html {
   padding-bottom: 29px;
 }
 
-.socials__list {
+.socials_list {
   margin: 0px;
+  margin-top: -13px;
   padding: 0px;
   float: left;
 }
 
-.social_item {
+.socials_item {
   display: inline-block;
+  margin-right: 12px;
 }
 
 .social_link {
   display: block;
   width: 26px;
   height: 26px;
+}
+
+.sprite-sprite, .social_link_FB, .social_link_VK, .social_link_TW {
+  background-image: url('../../img/sprite-sef582bff17.png');
+  background-repeat: no-repeat;
+}
+
+.social_link_FB {
+  background-position: 0 -26px;
+  display: block;
+  width: 26px;
+  height: 26px;
+  font-size: 0px;
+  vertical-align: top;
+}
+.social_link_FB:hover, .social_link_FB.FB-hover {
+  background-position: 0 0;
+}
+
+.social_link_VK {
+  background-position: 0 -130px;
+  display: block;
+  width: 26px;
+  height: 26px;
+  font-size: 0px;
+  vertical-align: top;
+}
+.social_link_VK:hover, .social_link_VK.VK-hover {
+  background-position: 0 -104px;
+}
+
+.social_link_TW {
+  background-position: 0 -78px;
+  display: block;
+  width: 26px;
+  height: 26px;
+  font-size: 0px;
+  vertical-align: top;
+}
+.social_link_TW:hover, .social_link_TW.TW-hover {
+  background-position: 0 -52px;
 }
 
 .adress {
