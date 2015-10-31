@@ -5,7 +5,7 @@ html(lang="en")
 		meta(http-equiv="x-ua-compatible" content="ie=edge")
 		link(rel="stylesheet" href="css/main.css")
 		link(rel="stylesheet" href="fonts/Fonts.css")
-		link(rel="stylesheet" href="bower/normalize-css/normalize.css")
+		link(rel="stylesheet" href="bower/select2/dist/css/select2.min.css")
 		title
 			block title
 	body
@@ -31,4 +31,8 @@ html(lang="en")
 			.info
 				include _common/info
 		footer.footer
-			include _common/footer				
+			include _common/footer
+		script(src="bower/jquery/dist/jquery.min.js")
+		script(src="bower/jquery.columnizer/src/jquery.columnizer.min.js")
+		script(src="bower/select2/dist/js/select2.full.min.js")
+		script(src="js/main.js")				

@@ -5,7 +5,7 @@
 		<meta http-equiv="x-ua-compatible" content="ie=edge"/>
 		<link rel="stylesheet" href="css/main.css"/>
 		<link rel="stylesheet" href="fonts/Fonts.css"/>
-		<link rel="stylesheet" href="bower/normalize-css/normalize.css"/>
+		<link rel="stylesheet" href="bower/select2/dist/css/select2.min.css"/>
 		<title>Мобильные телефоны</title>
 	</head>
 	<body>
@@ -40,7 +40,7 @@
 				<div class="wrapper clearfix">
 							<ul class="nav_list">
 								<li class="nav_item"><a href="#" class="nav_link">Планшеты</a></li>
-								<li class="nav_item"><a href="#" class="nav_link active">Мобильные</a></li>
+								<li class="nav_item"><a href="#" class="nav_link active">Мобильные телефоны</a></li>
 								<li class="nav_item"><a href="#" class="nav_link">Мр3 плееры</a></li>
 								<li class="nav_item"><a href="#" class="nav_link">Персональные компьютеры</a></li>
 								<li class="nav_item"><a href="#" class="nav_link">Ноутбуки</a></li>
@@ -59,11 +59,90 @@
 					<li class="status-phone_list"><a class="status-phone_link">Бюджетная линейка</a></li>
 				</ul>
 				<ul class="filter">
-					<li class="filter_item">Наличие в магазинах</li>
-					<li class="filter_item">Бренды</li>
-					<li class="filter_item">Цена</li>
-					<li class="filter_item">Цвет</li>
-					<li class="filter_item">Операционные системы</li>
+					<li class="filter_item"> 
+						<h4 class="filter_name">
+							 
+							Наличие в магазинах
+						</h4>
+						<div class="filter_holder">
+							<input type="radio" id="all" class="filter_input_radio"/>
+							<label for="all" class="filter_label_radio">Во всех магазинах</label>
+						</div>
+						<div class="filter_holder">
+							<input type="radio" id="closer" class="filter_input_radio"/>
+							<label for="closer" class="filter_label_radio">В ближайшем ко мне магазине	</label>
+						</div>
+					</li>
+					<li class="filter_item"> 
+						<h4 class="filter_name">Бренды</h4>
+						<div class="filter_holder">
+							<input type="checkbox" id="Lenovo" class="filter_input_checkbox"/>
+							<label for="Lenovo" class="filter_label_checkbox">Lenovo</label>
+						</div>
+						<div class="filter_holder">
+							<input type="checkbox" id="Apple" class="filter_input_checkbox"/>
+							<label for="Apple" class="filter_label_checkbox">Apple</label>
+						</div>
+						<div class="filter_holder">
+							<input type="checkbox" id="Samsung" class="filter_input_checkbox"/>
+							<label for="Samsung" class="filter_label_checkbox">Samsung</label>
+						</div>
+						<div class="filter_holder">
+							<input type="checkbox" id="Asus" class="filter_input_checkbox"/>
+							<label for="Asus" class="filter_label_checkbox">Asus</label>
+						</div>
+						<div class="filter_holder">
+							<input type="checkbox" id="Motorola" class="filter_input_checkbox"/>
+							<label for="Motorola" class="filter_label_checkbox">Motorola</label>
+						</div>
+						<div class="filter_holder"><a href="#" class="reset">Сбросить фильтр	</a></div>
+					</li>
+					<li class="filter_item"> 
+						<h4 class="filter_name">Цена</h4>
+					</li>
+					<li class="filter_item"> 
+						<h4 class="filter_name">Цвет</h4>
+						<div class="filter_holder">
+							<ul class="color">
+								<li class="color_item"><a href="#" class="color_link_white"></a></li>
+								<li class="color_item"><a href="#" class="color_link_silver"></a></li>
+								<li class="color_item"><a href="#" class="color_link_black"></a></li>
+								<li class="color_item"><a href="#" class="color_link_blue"></a></li>
+								<li class="color_item"><a href="#" class="color_link_red"></a></li>
+								<li class="color_item"><a href="#" class="color_link_yellow"></a></li>
+								<li class="color_item"><a href="#" class="color_link_orange"></a></li>
+								<li class="color_item"><a href="#" class="color_link_green"></a></li>
+								<li class="color_item"><a href="#" class="color_link_cyan"></a></li>
+								<li class="color_item"><a href="#" class="color_link_violet"></a></li>
+								<li class="color_item"><a href="#" class="color_link_magenta"></a></li>
+								<li class="color_item"><a href="#" class="color_link_brown">					</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="filter_item"> 
+						<h4 class="filter_name">Операционные системы</h4>
+						<div class="filter_holder">
+							<input type="checkbox" id="Android" class="filter_input_checkbox"/>
+							<label for="Android" class="filter_label_checkbox">Android</label>
+						</div>
+						<div class="filter_holder">
+							<input type="checkbox" id="iOS" class="filter_input_checkbox"/>
+							<label for="iOS" class="filter_label_checkbox">iOS</label>
+						</div>
+						<div class="filter_holder">
+							<input type="checkbox" id="Windows Mobile" class="filter_input_checkbox"/>
+							<label for="Windows Mobile" class="filter_label_checkbox">Windows Mobile</label>
+						</div>
+						<div class="filter_holder">
+							<input type="checkbox" id="Symbian" class="filter_input_checkbox"/>
+							<label for="Symbian" class="filter_label_checkbox">Symbian</label>
+						</div>
+						<div class="filter_holder">
+							<input type="checkbox" id="Custom" class="filter_input_checkbox"/>
+							<label for="Custom" class="filter_label_checkbox">Custom</label>
+						</div>
+						<div class="filter_holder"><a href="#" class="reset">Сбросить фильтр</a></div>
+					</li>
 				</ul>
 			</aside>
 			<section class="section">
@@ -475,5 +554,9 @@
 			</div>
 			<p class="copyright">All rights reserved. 2015. no copy alowed</p>
 		</footer>
+		<script src="bower/jquery/dist/jquery.min.js"></script>
+		<script src="bower/jquery.columnizer/src/jquery.columnizer.min.js"></script>
+		<script src="bower/select2/dist/js/select2.full.min.js"></script>
+		<script src="js/main.js">				</script>
 	</body>
 </html>

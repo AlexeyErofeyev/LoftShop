@@ -5,8 +5,80 @@ aside.aside
 					li.status-phone_list
 						a.status-phone_link Бюджетная линейка
 				ul.filter
-					li.filter_item Наличие в магазинах
-					li.filter_item Бренды
-					li.filter_item Цена
-					li.filter_item Цвет
-					li.filter_item Операционные системы
+					li.filter_item 
+						h4.filter_name 
+							|Наличие в магазинах
+						.filter_holder
+							input(type="radio" class="filter_input_radio" id = "all")
+							label(class="filter_label_radio" for="all") Во всех магазинах
+						.filter_holder
+							input(type="radio" class="filter_input_radio" id="closer")
+							label(class="filter_label_radio" for="closer") В ближайшем ко мне магазине	
+					li.filter_item 
+						h4.filter_name Бренды
+						.filter_holder
+							input(type="checkbox" class="filter_input_checkbox" id = "Lenovo")
+							label(class="filter_label_checkbox" for="Lenovo") Lenovo
+						.filter_holder
+							input(type="checkbox" class="filter_input_checkbox" id="Apple")
+							label(class="filter_label_checkbox" for="Apple") Apple
+						.filter_holder
+							input(type="checkbox" class="filter_input_checkbox" id = "Samsung")
+							label(class="filter_label_checkbox" for="Samsung") Samsung
+						.filter_holder
+							input(type="checkbox" class="filter_input_checkbox" id="Asus")
+							label(class="filter_label_checkbox" for="Asus") Asus
+						.filter_holder
+							input(type="checkbox" class="filter_input_checkbox" id="Motorola")
+							label(class="filter_label_checkbox" for="Motorola") Motorola
+						.filter_holder
+							a(href="#" class="reset") Сбросить фильтр	
+					li.filter_item 
+						h4.filter_name Цена
+					li.filter_item 
+						h4.filter_name Цвет
+						.filter_holder
+							ul.color
+								li.color_item
+										a(href="#" class="color_link_white")
+								li.color_item
+										a(href="#" class="color_link_silver")
+								li.color_item
+										a(href="#" class="color_link_black")
+								li.color_item
+										a(href="#" class="color_link_blue")
+								li.color_item
+										a(href="#" class="color_link_red")
+								li.color_item
+										a(href="#" class="color_link_yellow")
+								li.color_item
+										a(href="#" class="color_link_orange")
+								li.color_item
+										a(href="#" class="color_link_green")
+								li.color_item
+										a(href="#" class="color_link_cyan")
+								li.color_item
+										a(href="#" class="color_link_violet")
+								li.color_item
+										a(href="#" class="color_link_magenta")
+								li.color_item
+										a(href="#" class="color_link_brown")					
+					li.filter_item 
+						h4.filter_name Операционные системы
+						.filter_holder
+							input(type="checkbox" class="filter_input_checkbox" id = "Android")
+							label(class="filter_label_checkbox" for="Android") Android
+						.filter_holder
+							input(type="checkbox" class="filter_input_checkbox" id="iOS")
+							label(class="filter_label_checkbox" for="iOS") iOS
+						.filter_holder
+							input(type="checkbox" class="filter_input_checkbox" id = "Windows Mobile")
+							label(class="filter_label_checkbox" for="Windows Mobile") Windows Mobile
+						.filter_holder
+							input(type="checkbox" class="filter_input_checkbox" id="Symbian")
+							label(class="filter_label_checkbox" for="Symbian") Symbian
+						.filter_holder
+							input(type="checkbox" class="filter_input_checkbox" id="Custom")
+							label(class="filter_label_checkbox" for="Custom") Custom
+						.filter_holder
+							a(href="#" class="reset") Сбросить фильтр

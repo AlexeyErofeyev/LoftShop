@@ -26,6 +26,15 @@
   margin-right: 7px;
 }
 
+.select2-hidden-accessible {
+  width: 141px;
+  border-radius: 3px;
+  padding-left: 7px;
+  padding-bottom: 3px;
+  font-family: "OpenSansLight";
+  font-size: 14px;
+}
+
 .option_item {
   width: 141px;
   border-radius: 3px;

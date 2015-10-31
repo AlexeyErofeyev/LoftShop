@@ -10,13 +10,12 @@ $orange: #ff6e34;
 	padding: 0px;
 }
 
-@mixin filterItem{
-	display: block;
+@mixin filterName{
 	font-size: 14px;
     padding-top: 12px;
     padding-bottom: 14px;
     padding-left: 27px;
-    border-bottom: 1px solid $borderColor;
+    margin: 0px;
     &:hover{
     	background-color: #d9e5ea;
     	cursor: pointer;
@@ -38,13 +37,198 @@ $orange: #ff6e34;
     }
 }
 .status-phone_link{
-	@include filterItem;
+	display: block;
+	font-size: 14px;
+	padding-top: 12px;
+	padding-bottom: 14px;
+	padding-left: 27px;
+	border-bottom: 1px solid #EBEDEF;
 	font-family: "OpenSansRegular";
+	&:hover{
+		background-color: #d9e5ea;
+		cursor: pointer;
+	}
 }
 .filter{
 	@include filter;
 	font-family: 'OpenSansSemiBold';
 }
 .filter_item{
-	@include filterItem;
+	margin:0;
+	padding:0;
+	border-bottom: 1px solid $borderColor;
+}
+.filter_name{
+	@include filterName;
+}
+.filter_holder{
+	padding-left: 27px;
+    margin-top: -1px;
+    margin-bottom: 17px;
+    position: relative;
+}
+.filter_input_radio, .filter_input_checkbox{
+	display:none;
+}
+@import "input/*.png"; 
+.filter_label_radio{
+	margin-left: 31px;
+	font-size: 14px;
+	&:after{
+		content:'';
+		position: absolute;
+		top: 2px;
+	    left: 29px;
+		display:block;
+		@include 	input-sprite(radio-hover);
+		display: block;
+		width: input-sprite-width(radio-hover);
+		height: input-sprite-height(radio-hover);
+		font-size: 0px;	 
+	}
+		&:hover:after{
+			@include 	input-sprite(radio);
+			width: input-sprite-width(radio);
+			height: input-sprite-height(radio);
+		} 
+	.filter_input_radio:checked + &:after{
+			@include 	input-sprite(radio-active);
+			width: input-sprite-width(radio-active);
+			height: input-sprite-height(radio-active);
+		}		
+
+}
+
+.filter_label_checkbox{
+	margin-left: 31px;
+	font-size: 14px;
+	&:after{
+		content:'';
+		position: absolute;
+		top: 2px;
+	    left: 29px;
+		display:block;
+		@include 	input-sprite(check);
+		display: block;
+		width: input-sprite-width(check);
+		height: input-sprite-height(check);
+		font-size: 0px;	 
+	}
+		&:hover:after{
+			@include 	input-sprite(check-hover);
+			width: input-sprite-width(check-hover);
+			height: input-sprite-height(check-hover);
+		} 
+	.filter_input_checkbox:checked + &:after{
+			@include 	input-sprite(check-active);
+			width: input-sprite-width(check-active);
+			height: input-sprite-height(check-active);
+		}
+}
+.reset{
+	font-size: 14px;
+	font-family: "OpenSansRegular";
+	color:#5db2fc;
+}
+.color{
+	margin: 0px;
+	margin-left: 27px;
+	padding: 0px;
+	padding-right: 80px;
+}
+.color_item{
+	margin: 0px;
+	margin-right: 14px;
+	margin-top: 14px;
+	padding: 0px;
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	border: 1px solid #dee1e4;
+	border-radius: 4px;
+	&:hover{
+		-webkit-box-shadow: 0px 0px 2px 0px rgba(255,102,0, 0.75);
+-moz-box-shadow:    0px 0px 2px 0px rgba(255,102,0, 0.75);
+box-shadow:         0px 0px 2px 0px rgba(255,102,0, 0.75);
+	}
+}
+.color_link_white{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+}
+.color_link_silver{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: silver;
+}
+
+.color_link_black{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+}
+.color_link_blue{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: #0a3153;
+}
+
+.color_link_red{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: red;
+}
+
+.color_link_yellow{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: yellow;
+}
+
+.color_link_orange{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: orange;
+}
+
+.color_link_cyan{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: cyan;
+}
+
+.color_link_green{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: green;
+}
+
+.color_link_violet{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: violet;
+}
+
+.color_link_magenta{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: magenta;
+}
+.color_link_brown{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: brown;
 }

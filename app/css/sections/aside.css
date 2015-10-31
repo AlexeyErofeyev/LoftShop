@@ -27,7 +27,7 @@
   padding-top: 12px;
   padding-bottom: 14px;
   padding-left: 27px;
-  border-bottom: 1px solid #ebedef;
+  border-bottom: 1px solid #EBEDEF;
   font-family: "OpenSansRegular";
 }
 .status-phone_link:hover {
@@ -46,15 +46,216 @@
   font-family: 'OpenSansSemiBold';
 }
 
+.filter_item {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #ebedef;
+}
+
 .filter_name {
-  display: block;
   font-size: 14px;
   padding-top: 12px;
   padding-bottom: 14px;
   padding-left: 27px;
-  border-bottom: 1px solid #ebedef;
+  margin: 0px;
 }
 .filter_name:hover {
   background-color: #d9e5ea;
   cursor: pointer;
+}
+
+.filter_holder {
+  padding-left: 27px;
+  margin-top: -1px;
+  margin-bottom: 17px;
+  position: relative;
+}
+
+.filter_input_radio, .filter_input_checkbox {
+  display: none;
+}
+
+.input-sprite, .filter_label_radio:after, .filter_label_radio:hover:after, .filter_input_radio:checked + .filter_label_radio:after, .filter_label_checkbox:after, .filter_label_checkbox:hover:after, .filter_input_checkbox:checked + .filter_label_checkbox:after {
+  background-image: url('../../img/input-s25aaf387a8.png');
+  background-repeat: no-repeat;
+}
+
+.filter_label_radio {
+  margin-left: 31px;
+  font-size: 14px;
+}
+.filter_label_radio:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 29px;
+  display: block;
+  background-position: 0 -76px;
+  display: block;
+  width: 19px;
+  height: 19px;
+  font-size: 0px;
+}
+.filter_label_radio:hover:after {
+  background-position: 0 -95px;
+  width: 19px;
+  height: 19px;
+}
+.filter_label_radio:hover:after:hover, .filter_label_radio:hover:after.radio-hover {
+  background-position: 0 -76px;
+}
+.filter_label_radio:hover:after:active, .filter_label_radio:hover:after.radio-active {
+  background-position: 0 -57px;
+}
+.filter_input_radio:checked + .filter_label_radio:after {
+  background-position: 0 -57px;
+  width: 19px;
+  height: 19px;
+}
+
+.filter_label_checkbox {
+  margin-left: 31px;
+  font-size: 14px;
+}
+.filter_label_checkbox:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 29px;
+  display: block;
+  background-position: 0 -38px;
+  display: block;
+  width: 19px;
+  height: 19px;
+  font-size: 0px;
+}
+.filter_label_checkbox:after:hover, .filter_label_checkbox:after.check-hover {
+  background-position: 0 -19px;
+}
+.filter_label_checkbox:after:active, .filter_label_checkbox:after.check-active {
+  background-position: 0 0;
+}
+.filter_label_checkbox:hover:after {
+  background-position: 0 -19px;
+  width: 19px;
+  height: 19px;
+}
+.filter_input_checkbox:checked + .filter_label_checkbox:after {
+  background-position: 0 0;
+  width: 19px;
+  height: 19px;
+}
+
+.reset {
+  font-size: 14px;
+  font-family: "OpenSansRegular";
+  color: #5db2fc;
+}
+
+.color {
+  margin: 0px;
+  margin-left: 27px;
+  padding: 0px;
+  padding-right: 80px;
+}
+
+.color_item {
+  margin: 0px;
+  margin-right: 14px;
+  margin-top: 14px;
+  padding: 0px;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #dee1e4;
+  border-radius: 4px;
+}
+.color_item:hover {
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(255, 102, 0, 0.75);
+  -moz-box-shadow: 0px 0px 2px 0px rgba(255, 102, 0, 0.75);
+  box-shadow: 0px 0px 2px 0px rgba(255, 102, 0, 0.75);
+}
+
+.color_link_white {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.color_link_silver {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: silver;
+}
+
+.color_link_black {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.color_link_blue {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #0a3153;
+}
+
+.color_link_red {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+
+.color_link_yellow {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: yellow;
+}
+
+.color_link_orange {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: orange;
+}
+
+.color_link_cyan {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: cyan;
+}
+
+.color_link_green {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: green;
+}
+
+.color_link_violet {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: violet;
+}
+
+.color_link_magenta {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: magenta;
+}
+
+.color_link_brown {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: brown;
 }
