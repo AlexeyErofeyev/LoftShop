@@ -67,7 +67,7 @@ html {
 }
 
 @import "sprite/*.png"; 
-$items : FB,VK,TW;
+$items : 'FB','VK','TW';
 @each $item in $items{
 .social_link_#{$item} {
   @include 	sprite-sprite(#{$item});

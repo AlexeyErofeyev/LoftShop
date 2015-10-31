@@ -1,8 +1,6 @@
 {
   "name": "loftSite",
   "dependencies": {
-    "jquery": "2.1",
-    "jquery.columnizer": "~1.6.2",
     "normalize-css": "normalize.css#~3.0.3"
   }
 }

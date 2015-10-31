@@ -46,7 +46,7 @@
   font-family: 'OpenSansSemiBold';
 }
 
-.filter_item {
+.filter_name {
   display: block;
   font-size: 14px;
   padding-top: 12px;
@@ -54,7 +54,7 @@
   padding-left: 27px;
   border-bottom: 1px solid #ebedef;
 }
-.filter_item:hover {
+.filter_name:hover {
   background-color: #d9e5ea;
   cursor: pointer;
 }
