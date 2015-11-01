@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="UTF-8"/>
 		<meta http-equiv="x-ua-compatible" content="ie=edge"/>
-		<link rel="stylesheet" href="css/main.css"/>
 		<link rel="stylesheet" href="fonts/Fonts.css"/>
-		<link rel="stylesheet" href="bower/select2/dist/css/select2.min.css"/>
+		<link rel="stylesheet" href="bower/jquery-ui/themes/flick/jquery-ui.css"/>
+		<link rel="stylesheet" href="css/main.css"/>
 		<title>Мобильные телефоны</title>
 	</head>
 	<body>
@@ -60,10 +60,7 @@
 				</ul>
 				<ul class="filter">
 					<li class="filter_item"> 
-						<h4 class="filter_name">
-							 
-							Наличие в магазинах
-						</h4>
+						<h4 class="filter_name">Наличие в магазинах</h4>
 						<div class="filter_holder">
 							<input type="radio" id="all" class="filter_input_radio"/>
 							<label for="all" class="filter_label_radio">Во всех магазинах</label>
@@ -99,6 +96,14 @@
 					</li>
 					<li class="filter_item"> 
 						<h4 class="filter_name">Цена</h4>
+						<div class="filter_holder">
+							<p>
+								<label for="amount">Цена</label>
+								<input type="text" id="amount" readonly="readonly" class="amount_min"/>
+								<input type="text" id="amount" readonly="readonly" class="amount_max"/>
+							</p>
+							<div id="slider-range">		</div>
+						</div>
 					</li>
 					<li class="filter_item"> 
 						<h4 class="filter_name">Цвет</h4>
@@ -557,6 +562,7 @@
 		<script src="bower/jquery/dist/jquery.min.js"></script>
 		<script src="bower/jquery.columnizer/src/jquery.columnizer.min.js"></script>
 		<script src="bower/select2/dist/js/select2.full.min.js"></script>
-		<script src="js/main.js">				</script>
+		<script src="bower/jquery-ui/jquery-ui.min.js"></script>
+		<script src="js/main.js">			</script>
 	</body>
 </html>

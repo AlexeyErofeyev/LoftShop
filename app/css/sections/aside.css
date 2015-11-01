@@ -66,6 +66,7 @@
 
 .filter_holder {
   padding-left: 27px;
+  padding-right: 27px;
   margin-top: -1px;
   margin-bottom: 17px;
   position: relative;
@@ -258,4 +259,28 @@
   width: 100%;
   height: 100%;
   background-color: brown;
+}
+
+.ui-slider {
+  background-color: #dee1e4;
+  height: 3px;
+}
+
+#slider-range > span {
+  width: 5px;
+  height: 13px;
+  top: 3px;
+  left: 3px;
+}
+
+.amount_min {
+  width: 40px;
+}
+
+.amount_max {
+  width: 40px;
+}
+
+#slider-range > .ui-slider-range, .ui-widget-header, .ui-corner-all {
+  background-color: #ff6e34;
 }

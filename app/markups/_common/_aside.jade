@@ -6,7 +6,7 @@ aside.aside
 						a.status-phone_link Бюджетная линейка
 				ul.filter
 					li.filter_item 
-						h4.filter_name 
+						h4.filter_name
 							|Наличие в магазинах
 						.filter_holder
 							input(type="radio" class="filter_input_radio" id = "all")
@@ -35,6 +35,12 @@ aside.aside
 							a(href="#" class="reset") Сбросить фильтр	
 					li.filter_item 
 						h4.filter_name Цена
+						.filter_holder
+							p
+								label(for="amount") Цена
+								input(type="text" id="amount" class="amount_min" readonly)
+								input(type="text" id="amount" class="amount_max" readonly)
+							#slider-range		
 					li.filter_item 
 						h4.filter_name Цвет
 						.filter_holder
