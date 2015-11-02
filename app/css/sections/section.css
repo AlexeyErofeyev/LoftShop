@@ -43,16 +43,28 @@
   font-family: "OpenSansLight";
   font-size: 14px;
   border: 1px solid #ebedef;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none !important;
-  text-indent: 0.01px;
-  text-overflow: '';
-  position: relative;
-  background-image: url(../img/arrowDown.png);
-  background-repeat: no-repeat;
-  background-position: 122px 9px;
+}
+
+.select2-container .select2-selection__arrow b {
+  background-image: url(../img/arrowDown.png) !important;
+  background-repeat: no-repeat !important;
+  width: 13px !important;
+  height: 9px !important;
+  border: none !important;
+  margin: auto !important;
+  top: 10px !important;
+  left: 0px !important;
+}
+
+.select2-container--open.select2-container .select2-selection__arrow b {
+  background-image: url(../img/arrowUp.png) !important;
+  background-repeat: no-repeat !important;
+  width: 13px !important;
+  height: 9px !important;
+  border: none !important;
+  margin: auto !important;
+  top: 10px !important;
+  left: 0px !important;
 }
 
 .grid {
@@ -82,6 +94,7 @@
   margin-left: 32px;
   padding: 0px;
   margin-top: -10px;
+  cursor: pointer;
 }
 
 .grids-sprite, .gridView_link_line, .gridView_link_mozaic, .gridView_link_inline, .gridView_link_line-active, .gridView_link_inline-active, .gridView_link_mozaic-active {
@@ -239,7 +252,7 @@
 }
 
 .phone-content .phone_name {
-  height: 40px;
+  min-height: 40px;
   margin: 0 auto;
   margin-bottom: 2px;
   text-align: center;
@@ -317,22 +330,30 @@
   margin-left: 37px;
 }
 
-.phone-content .availability_indicator {
-  display: inline-block;
+.phone-content .availability {
+  font-family: "OpenSansSemiBold";
+  font-size: 12px;
+  list-style: none;
+  color: green;
+  margin: 0 auto;
+  padding: 0px;
+  float: left;
+  margin-top: 8px;
+  margin-left: 37px;
+  position: relative;
 }
 
-.phone-content .availability_indicator-color {
+.phone-content .availability:before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 4px;
+  left: -35px;
   width: 7px;
   height: 7px;
   background-color: green;
   border-radius: 50%;
   margin-left: 20px;
-}
-
-.phone-content .availability_status {
-  color: #7f7f7f;
-  margin-left: 4px;
-  display: inline-block;
 }
 
 .phone_bay {
@@ -406,13 +427,26 @@
   padding-left: 21px;
   padding-bottom: 12px;
   border: 1px solid #ebedef;
+  background-color: #fbfbfb;
   display: block;
   width: 722px;
+  position: relative;
 }
 .phone-content_line .phone-item:hover {
   -webkit-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.6);
   -moz-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.6);
   box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.6);
+}
+
+.phone-content_line .phone-item:before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 21px;
+  right: 154px;
+  width: 1px;
+  height: 204px;
+  background-color: #ebedef;
 }
 
 .phone-content_line ._line {
@@ -537,6 +571,7 @@
 .rub {
   margin-left: 5px;
   font-family: 'als_rublregular';
+  font-size: 19px;
 }
 
 .phone-content_line .rub {
@@ -602,6 +637,7 @@
   padding-left: 12px;
   padding-bottom: 4px;
   border: 1px solid #ebedef;
+  background-color: #fbfbfb;
   display: block;
   width: 722px;
 }

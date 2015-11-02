@@ -14,23 +14,23 @@ mixin phone(className)
 			li(class="phone-item").clearfix
 					div(class='_line').clearfix
 						div(class="phone_img-holder")
-							img(src = item.img class="phone-img")
+							img(src = item.img class="phone-img" alt="Phone")
 						div(class="phone_ico-holder")
 							ul(class="ico_list")
 								li(class="ico_item")
 									a.ico_link
-										img(class="ico_img" src="img/phone-1ico.png")
+										img(class="ico_img" src="img/phone-1ico.png"alt="Mini Phone")
 								li(class="ico_item")
 									a.ico_link
-										img(class="ico_img" src="img/phone-2ico.png")
+										img(class="ico_img" src="img/phone-2ico.png"alt="Mini Phone")
 								li(class="ico_item")
 									a.ico_link
-										img(class="ico_img" src="img/phone-4ico.png")
+										img(class="ico_img" src="img/phone-4ico.png"alt="Mini Phone")
 						p(class="art") Артикул: #{item.art}					
 					div(class='_line').clearfix
 						.opis_holder
 							p.opis Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц						
-						div(class="phone_name")				
+						div(class="phone_name")
 							h2 #{item.name}
 						ul(class="kit")
 							li.clearfix 
@@ -66,7 +66,7 @@ mixin phone(className)
 							li.star
 								img(src="img/flatStar.png")
 							li.star 4
-					div(class='_line')		
+					div(class='_line')
 						div(class='price').clearfix		
 							h4.price_num #{item.price}
 								span.rub p
