@@ -8,6 +8,7 @@ aside.aside
 					li.filter_item 
 						h4.filter_name
 							|Наличие в магазинах
+							span.arrow
 						.filter_holder
 							input(type="radio" class="filter_input_radio" id = "all")
 							label(class="filter_label_radio" for="all") Во всех магазинах
@@ -16,6 +17,7 @@ aside.aside
 							label(class="filter_label_radio" for="closer") В ближайшем ко мне магазине	
 					li.filter_item 
 						h4.filter_name Бренды
+							span.arrow
 						.filter_holder
 							input(type="checkbox" class="filter_input_checkbox" id = "Lenovo")
 							label(class="filter_label_checkbox" for="Lenovo") Lenovo
@@ -31,18 +33,21 @@ aside.aside
 						.filter_holder
 							input(type="checkbox" class="filter_input_checkbox" id="Motorola")
 							label(class="filter_label_checkbox" for="Motorola") Motorola
-						.filter_holder
+						.filter_holder.nomargin
 							a(href="#" class="reset") Сбросить фильтр	
 					li.filter_item 
 						h4.filter_name Цена
+							span.arrow
 						.filter_holder
-							p
-								label(for="amount") Цена
-								input(type="text" id="amount" class="amount_min" readonly)
-								input(type="text" id="amount" class="amount_max" readonly)
+							p.slider_info
+								label(for="amount_min" class="Ot") От
+								input(type="text" id="amount_min" class="amount_min" readonly)
+								label(for="amount_max" class="Do") До
+								input(type="text" id="amount_max" class="amount_max" readonly)
 							#slider-range		
 					li.filter_item 
 						h4.filter_name Цвет
+							span.arrow
 						.filter_holder
 							ul.color
 								li.color_item
@@ -71,6 +76,7 @@ aside.aside
 										a(href="#" class="color_link_brown")					
 					li.filter_item 
 						h4.filter_name Операционные системы
+							span.arrow
 						.filter_holder
 							input(type="checkbox" class="filter_input_checkbox" id = "Android")
 							label(class="filter_label_checkbox" for="Android") Android

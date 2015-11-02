@@ -26,6 +26,8 @@ body{
 	color:#333333;
 	background-color: #f4f4f4;
 	height: auto;
+	padding: 0;
+	margin:0;
 	position:relative;
 }
 html {  
@@ -48,7 +50,7 @@ html {
 }
 .contacts{
 	padding-top: 24px;
-    padding-bottom: 29px;
+    padding-bottom: 26px;
 }
 .socials_list {
   margin: 0px;
@@ -82,18 +84,46 @@ $items : 'FB','VK','TW';
 .adress {
   float: right;
 }
-
 .map{
 	display: inline-block;
 	font-size: 14px;
 	font-family:'OpenSansRegular';
 	margin-right:105px;
+	position: relative;
 }
+@import "town/*.png";
+
+.map:before{
+	content:'';
+	display: block;
+	position: absolute;
+	left: -22px;
+    top: 2px;
+	@include 	town-sprite(point);
+	display: block;
+	width: town-sprite-width(point);
+	height: town-sprite-height(point);
+}
+
+
 .phone{
 	display: inline-block;
 	font-size: 18px;
 	font-family:'OpenSansSemiBold';
 	margin-right:2px;
+	position: relative;
+}
+
+.phone:before{
+	content:'';
+	display: block;
+	position: absolute;
+	left: -22px;
+    top: 5px;
+	@include 	town-sprite(phone);
+	display: block;
+	width: town-sprite-width(phone);
+	height: town-sprite-height(phone);
 }
 
 .search{
@@ -214,8 +244,13 @@ $items : 'FB','VK','TW';
 	font-family: "OpenSansRegular";
 	margin-bottom: 20px;
 }
+
+.bread_item_last{
+	color:$orange;
+	text-decoration: underline;
+}
 .page-name{
-	font-family: 'OpenSansSemiBold';
+	font-family: "OpenSansBold";
 	font-size: 20px;
 	margin-bottom: 27px;
 }

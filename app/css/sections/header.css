@@ -2,6 +2,8 @@ body {
   color: #333333;
   background-color: #f4f4f4;
   height: auto;
+  padding: 0;
+  margin: 0;
   position: relative;
 }
 
@@ -29,7 +31,7 @@ html {
 
 .contacts {
   padding-top: 24px;
-  padding-bottom: 29px;
+  padding-bottom: 26px;
 }
 
 .socials_list {
@@ -100,6 +102,24 @@ html {
   font-size: 14px;
   font-family: 'OpenSansRegular';
   margin-right: 105px;
+  position: relative;
+}
+
+.town-sprite, .map:before, .phone:before {
+  background-image: url('../../img/town-sc26cb08052.png');
+  background-repeat: no-repeat;
+}
+
+.map:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -22px;
+  top: 2px;
+  background-position: 0 -16px;
+  display: block;
+  width: 12px;
+  height: 16px;
 }
 
 .phone {
@@ -107,6 +127,19 @@ html {
   font-size: 18px;
   font-family: 'OpenSansSemiBold';
   margin-right: 2px;
+  position: relative;
+}
+
+.phone:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -22px;
+  top: 5px;
+  background-position: 0 0;
+  display: block;
+  width: 12px;
+  height: 16px;
 }
 
 .search {
@@ -234,8 +267,13 @@ html {
   margin-bottom: 20px;
 }
 
+.bread_item_last {
+  color: #ff6e34;
+  text-decoration: underline;
+}
+
 .page-name {
-  font-family: 'OpenSansSemiBold';
+  font-family: "OpenSansBold";
   font-size: 20px;
   margin-bottom: 27px;
 }

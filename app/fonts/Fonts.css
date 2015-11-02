@@ -29,8 +29,24 @@
 }
 
 @font-face {
-  font-family: 'PTRoubleDecorative';
-  src: url('PTRoubleDecorative/PTRoubleDecorative.eot') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: "OpenSansBold";
+    src: url("OpenSans/OpenSansBold/OpenSansBold.eot");
+    src: url("OpenSans/OpenSansBold/OpenSansBold.eot?#iefix")format("embedded-opentype"),
+    url("OpenSans/OpenSansBold/OpenSansBold.woff") format("woff"),
+    url("OpenSans/OpenSansBold/OpenSansBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'als_rublregular';
+    src: url('Rouble/rouble-webfont.eot');
+    src: url('Rouble/rouble-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Rouble/rouble-webfont.woff2') format('woff2'),
+         url('Rouble/rouble-webfont.woff') format('woff'),
+         url('Rouble/rouble-webfont.ttf') format('truetype'),
+         url('Rouble/rouble-webfont.svg#als_rublregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }

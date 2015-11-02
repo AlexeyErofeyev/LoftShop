@@ -11,12 +11,17 @@ html(lang="en")
 	body
 		include _common/_header					
 		.wrapper.clearfix
-			.bread-crumbs Главная > Каталог
+			.bread-crumbs 
+				span.bread_item Главная
+				span.bread_item >
+				span.bread_item_last Каталог
 			h1.page-name Мобильные телефоны
 			include _common/_aside	
 			include _common/_section
 		.wrapper.clearfix
 			ul.pages
+				li.pages_item 
+					a.pages_link <
 				li.pages_item 
 					a.pages_link 1
 				li.pages_item 
@@ -24,9 +29,7 @@ html(lang="en")
 				li.pages_item 
 					a.pages_link 3
 				li.pages_item 
-					a.pages_link 4
-				li.pages_item 
-					a.pages_link 5
+					a.pages_link >
 		.wrapper
 			.info
 				include _common/info
