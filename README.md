@@ -1,14 +1,52 @@
-Всем привет, это магазин
+# Страничка интернет магазина
 
+На страничке представлен каталог телефонов и аккордеон с фильтрами для отбора товаров.
 
-Как установить мой проект.
+![](README/shop.jpg)
 
-1. git clone https://github.com/AlexeyErofeyev/loftShool-Dz1-September2015.git
+## Аккордеон
 
-2. cd site
+![](README/accordion.jpg)  
 
-3. bower i
+Аккордеон содержит фильтры для отбора товаров, такие как:
 
-4. npm i
+*   Наличие в магазинах
+*   Бренды
+*   Цена
+*   Цвет
+*   Операционные системы
 
-5. gulp
+## Система сеток
+
+Нажав на одну из иконок можно изменить вид каталога
+
+![](README/greeds.jpg)  
+
+## Библиотеки используемые для этого проекта:
+
+*   jQuery
+*   jQuery-UI
+*   jQuery.columnizer
+*   Normalize-css
+*   Select2
+
+## Как скачать проект
+
+Перед тем как скачать проект убедитесь, что у вас установлены
+
+*   [Node.js](https://nodejs.org/)
+*   [NPM](https://www.npmjs.com/)
+*   [Bower](http://bower.io/)
+*   [Gulp](http://gulpjs.com/)
+
+### Скачивание
+
+В терминале перейдите в папку в которую будет скачиваться проект. После чего наберите команды
+
+*   git clone https://github.com/AlexeyErofeyev/LoftShop.git
+*   cd LoftShop
+*   npm install
+*   bower install
+*   gulp
+
+Проект сам запустится и откроется в браузере
